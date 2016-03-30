@@ -25,9 +25,11 @@ excerpt_separator: "<!--more-->"
 email: your-email@domain.com
 exclude:
 - ".gitignore"
+- .gulpfile.js
+- .package.json
 description: |
   Write an awesome description for your new site here.
-baseurl: 
+baseurl:
 destination: "./build"
 sass:
   style: compressed
