@@ -3,11 +3,8 @@ title: Siteleaf/Jekyll
 url: http://siteleaf-jekyll.siteleaf.net
 timezone: America/New_York
 collections:
-  news:
-    title: News
-    output: true
   posts:
-    title: Posts
+    title: posts
     output: true
   uploads:
     title: Uploads
@@ -30,6 +27,7 @@ exclude:
 description: |
   Write an awesome description for your new site here.
 baseurl:
+permalink: /:title
 destination: "./build"
 sass:
   style: compressed

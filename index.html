@@ -5,16 +5,18 @@ topics:
 - Siteleaf
 - Jekyll
 ---
-
 <div class="home">
-  {% assign news = site.news | sort: 'date' | reverse %}
-  {% for post in news limit:1 %}
-    <h2 class="post-title">{{ post.title }}</h2>
-    <p class="post-details">Topics:
-    {% for topic in post.topics %}<span class="post-topic">{{ topic | capitalize }}</span>{% endfor %}</p>
-    {{ post.content }}
-    {% unless forloop.last %}<hr>{% endunless %}
-  {% endfor %}
+  <div class="intro"><p>A growing collection of some of the great statuary within the Nation’s capital.</p></div>
   <hr>
-{% include related.html %}
+  <div class="statues">
+    {% for post in site.posts  %}
+      <a href="{{ post.url }}" class="permalink">
+        <h2 class="title">{{ post.title }}</h2>
+      </a>
+      <p>
+        {{ post.excerpt }}
+      </p>
+      <p class="read-more"><a href="{{ post.url }}">Read More</a></p>
+    {% endfor %}
+  </div>
 </div>

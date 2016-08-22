@@ -4,22 +4,26 @@
   width: 100%;
 }
 .big-wrap{
-  padding-top: 8rem;
+  position: relative;
   @include min-width(3.5);
   margin: auto;
   @include responsive(tiny-screens){
+    top: -4rem;
     @include width(4);
   }
   @include responsive(small-screens){
+    top: -6rem;
     @include width(6);
   }
   @include responsive(medium-screens){
     @include width(8);
   }
   @include responsive(wide-screens){
+    top: -8rem;
     @include width(12);
   }
   @include responsive(ultra-wide-screens){
+    top: -10rem;
     @include width(14);
   }
 }
@@ -30,13 +34,25 @@ header{
   postion: relative;
 }
 h1{
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   position: relative;
-  top: -5rem;
+  top: -4rem;
   color: white;
   z-index: 2;
+  @include responsive(small-screens){
+    font-size: 5rem;
+    top: -6rem;
+  }
+  @include responsive(wide-screens){
+    font-size: 7rem;
+    top: -8rem;
+  }
+  @include responsive(ultra-wide-screens){
+    font-size: 9rem;
+    top: -10rem;
+  }
 }
 header{
   height: 500px;
@@ -76,6 +92,17 @@ nav{
   height: 1rem;
   position: relative;
   top: .14rem;
+}
+.read-more{
+  text-align: right;
+}
+.intro{
+  margin-bottom: 3rem;
+  p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+  }
 }
 // 🎌The Footer🎌
 .colophon{
