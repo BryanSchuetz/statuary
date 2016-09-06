@@ -41,6 +41,7 @@ h1{
   top: -4rem;
   color: white;
   z-index: 2;
+  letter-spacing: .2rem;
   @include responsive(small-screens){
     font-size: 5rem;
     top: -6rem;
