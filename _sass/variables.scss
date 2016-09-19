@@ -70,6 +70,16 @@ $cols16: (16 * ($column + $gutter) - $gutter) / $em;
 @mixin min-width ($cols:1) {
 	width: ($cols * ($column + $gutter) - $gutter) / $em;
 }
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
 
 // 🎌 Underlines  🎌
 

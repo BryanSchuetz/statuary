@@ -108,6 +108,24 @@ nav{
     font-size: 1.1rem;
   }
 }
+img.listing-image{
+  width: 35%;
+  float: left;
+  margin-top: 1.8rem;
+}
+.excerpt{
+  margin-top: -.5rem;
+}
+.details{
+  width: 55%;
+  float: right;
+}
+.statue{
+  @include clearfix;
+}
+.read-more{
+  clear: both;
+}
 // 🎌The Footer🎌
 .colophon{
   text-align: center;

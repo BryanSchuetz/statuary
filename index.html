@@ -6,17 +6,20 @@ topics:
 - Jekyll
 ---
 <div class="home">
-  <div class="intro"><p><strong>A growing collection of some of the great statuary hidden around the Nation’s capital</strong>. Forget about the big stuff—The Lincoln Memorial, The Washington Monument, etc.—D.C. is filled with small monuments and statues all across the district, let's celebrate as much of it as we can.</p></div>
+  <div class="intro"><p><strong>A growing collection of some of the great statuary hidden around the Nation’s capital</strong>. Forget about the big stuff—The Lincoln Memorial, The Washington Monument, etc.—D.C. is filled with small monuments and statues all across the district, let's celebrate as much of it as we can.</p> </div>
   <hr>
   <div class="statues">
     {% for post in site.posts  %}
-      <a href="{{ post.url }}" class="permalink">
-        <h2 class="title">{{ post.title }}</h2>
-      </a>
-      <p>
-        {{ post.excerpt }}
-      </p>
+    <div class="statue">
+      <div class="details">
+        <a href="{{ post.url }}" class="permalink">
+          <h2 class="title">{{ post.title }}</h2></a>
+          <p class="excerpt">{{ post.excerpt | markdownify | remove:"<p>" | remove:"</p>" }}</p>
+      </div>
+      <img src="{{ post.listing }}" alt="" class="listing-image">
       <p class="read-more"><a href="{{ post.url }}">Read More</a></p>
+      <hr>
+    </div>
     {% endfor %}
   </div>
 </div>
