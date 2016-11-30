@@ -10,15 +10,8 @@ topics:
   <hr>
   <div class="statues">
     {% for post in site.posts  %}
-    <div class="statue">
-      <div class="details">
-        <a href="{{ post.url }}" class="permalink">
-          <h2 class="title">{{ post.title }}</h2></a>
-          <p class="excerpt">{{ post.excerpt | markdownify | remove:"<p>" | remove:"</p>" }}</p>
-      </div>
-      <img src="{{ post.listing }}" alt="" class="listing-image">
-      <p class="read-more"><a href="{{ post.url }}">Read More</a></p>
-      <hr>
+    <div class="statue" style="background-image: url({{ post.listing }});">
+      <a class="without-underline statue-details" href="{{ post.url }}">{{ post.title }}</a>
     </div>
     {% endfor %}
   </div>
