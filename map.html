@@ -24,7 +24,7 @@
 <style media="screen">
 
   #legend{
-    display: block;
+    display: none;
     z-index: 1;
     position: absolute;
     bottom: 10px;
@@ -92,11 +92,7 @@ div.mapboxgl-popup{
 }
 </style>
 <div id='map'></div>
-{% comment %}<div id='legend' style='display:block;'>
-  <strong>D.C. Statuary</strong>
-  <nav class='legend clearfix'>
-  <p><span style='background:#318DC8;'></span><label>Monuments</label></p>
-</div>{% endcomment %}
+
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGFpIiwiYSI6IkZsZ0hqcDAifQ.xT3JeLA3cXqgN3HBwoxgAA';
 var map = new mapboxgl.Map({
