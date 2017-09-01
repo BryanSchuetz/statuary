@@ -87,22 +87,25 @@
   hr{
     border-bottom: 0px;
   }
+div.mapboxgl-popup{
+  width: 50%;
+}
 </style>
 <div id='map'></div>
-<div id='legend' style='display:block;'>
+{% comment %}<div id='legend' style='display:block;'>
   <strong>D.C. Statuary</strong>
   <nav class='legend clearfix'>
   <p><span style='background:#318DC8;'></span><label>Monuments</label></p>
-</div>
+</div>{% endcomment %}
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGFpIiwiYSI6IkZsZ0hqcDAifQ.xT3JeLA3cXqgN3HBwoxgAA';
 var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/dai/cj6tglt4669i12rmzchzpe5f0', //stylesheet location
-    center: [14.50, 20], // starting position
-    minZoom: 2,
-    maxZoom: 9,
-    zoom: 3, // starting zoom
+    center: [-77.011999, 38.909853], // starting position
+    minZoom: 9,
+    maxZoom: 25,
+    zoom: 12, // starting zoom
     pitch: 40,
 });
 map.scrollZoom.disable();
@@ -164,7 +167,7 @@ map.on('click', function (e) {
         .addTo(map);
 });
 map.on('mousemove', function (e) {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['sbg-pins'] });
+    var features = map.queryRenderedFeatures(e.point, { layers: ['statuary-pins'] });
     map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
 });
 </script>
