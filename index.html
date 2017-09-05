@@ -10,9 +10,9 @@ zoom: 12
   <hr>
   <div class="statues">
     {% for post in site.posts  %}
-    <div class="statue" style="background-image: url({{ post.listing }});">
-      <a class="without-underline statue-details" href="{{ post.url }}">{{ post.title }}</a>
-    </div>
+    <a class="without-underline" href="{{ post.url }}"><div class="statue" style="background-image: url({{ post.listing }});">
+      <span class="statue-details">{{ post.title }}</span>
+    </div></a>
     {% endfor %}
   </div>
 </div>

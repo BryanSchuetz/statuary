@@ -13,6 +13,5 @@ zoom: 15
 
 Melpomene, the daughter of Zeus and the Muse of Tragedy. This particlar likeness is a replica of a Greek statue from the 4th century B.C. The original was unearthed in 1959 in Athens, this copy was presented as a present from the citizens of Greece to the people of the United States of America in 1991.
 
-This statue is located in a nice little park in Northwest surrounded by Embassies for China, Jordan, and Kuwait.
+Melpomene "to sing" or "the one that is melodious", initially the Muse of Chorus, she then became the Muse of Tragedy, for which she is best known now. Her name was derived from the Greek verb melpô or melpomai meaning "to celebrate with dance and song." She is often represented with a tragic mask and wearing the cothurnus, boots traditionally worn by tragic actors. Often, she also holds a knife or club in one hand and the tragic mask in the other.
 
-<!-- more -->

@@ -5,7 +5,8 @@
 <html>
 
   {% include head.html %}
-
+  <script type="text/javascript">
+  </script>
   <body>
     {% include svg_sprite.html %}
     {% include header.html %}
@@ -20,54 +21,6 @@
       {% include footer.html %}
     </div>
     <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiZGFpIiwiYSI6IkZsZ0hqcDAifQ.xT3JeLA3cXqgN3HBwoxgAA';
-var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/dai/cj6tglt4669i12rmzchzpe5f0', //stylesheet location
-    center: [-77.011999, 38.909853], // starting position
-    minZoom: 12,
-    maxZoom: 15,
-    pitch: 40,
-});
-map.scrollZoom.disable();
-// map.scrollZoom.disable();
-var nav = new mapboxgl.NavigationControl();
-map.addControl(nav, 'top-left');
-map.on('load', function(){
-  // Turn one on for client specific map embed on client pages
-  // map.setLayoutProperty(['USAID'], 'visibility', 'visible');
-  // map.setLayoutProperty(['DFID'], 'visibility', 'visible');
-  // map.setLayoutProperty(['EC'], 'visibility', 'visible');
-});
-
-map.on('click', function (e) {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['statuary-pins'] });
-
-    if (features.length) {
-        map.flyTo({center: features[0].geometry.coordinates});
-    }
-
-    var feature = features[0];
-
-    // Populate the popup and set its coordinates
-    // based on the feature found.
-    var popup = new mapboxgl.Popup()
-        .setLngLat(feature.geometry.coordinates)
-        .setHTML("<strong>"+feature.properties.title+"</strong><br>"+feature.properties.desc)
-        .addTo(map);
-});
-map.on('mousemove', function (e) {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['statuary-pins'] });
-    map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-});
-
-map.flyTo({
-        center: [
-            {{ page.long }},
-            {{ page.lat }}
-        ],
-        zoom: {{ page.zoom }}
-    });
-</script>
+    </script>
   </body>
 </html>
