@@ -2,7 +2,7 @@
 title: Friedrich Von Steuben
 date: 2016-08-18 08:33:57 -05:00
 topics:
-- War
+- Military
 layout: post
 listing: '/uploads/frederick-listing.jpg'
 wide: '/uploads/frederick-wide.jpg'

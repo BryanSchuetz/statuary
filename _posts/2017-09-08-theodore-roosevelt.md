@@ -2,7 +2,8 @@
 title: Theodore Roosevelt
 date: 2017-09-08 08:33:57 -05:00
 topics:
-- War
+- Military
+- Political
 layout: post
 listing: '/uploads/teddy-listing.jpg'
 wide: '/uploads/teddy-wide.jpg'

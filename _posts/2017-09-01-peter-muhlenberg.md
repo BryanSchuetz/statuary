@@ -2,7 +2,8 @@
 title: Peter Muhlenberg
 date: 2016-09-01 08:33:57 -05:00
 topics:
-- War
+- Military
+- Religious
 layout: post
 listing: '/uploads/muhlenberg-listing.jpg'
 wide: '/uploads/muhlenberg-wide.jpg'

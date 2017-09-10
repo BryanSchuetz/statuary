@@ -2,7 +2,7 @@
 title: Comte de Rochambeau
 date: 2017-09-08 08:33:57 -05:00
 topics:
-- War
+- Military
 layout: post
 listing: '/uploads/roch-listing.jpg'
 wide: '/uploads/roch-wide.jpg'

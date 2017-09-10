@@ -2,7 +2,7 @@
 title: Lafayette
 date: 2017-09-08 08:33:57 -05:00
 topics:
-- War
+- Military
 layout: post
 listing: '/uploads/Lafayette-listing.jpg'
 wide: '/uploads/Lafayette-wide.jpg'
