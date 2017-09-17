@@ -6,11 +6,16 @@ long: -77.066618
 zoom: 12
 ---
 <div class="home">
-  <div class="intro"><p><strong>A growing collection of some of the great statuary hidden around the Nation’s capital</strong>. Forget about the big stuff—The Lincoln Memorial, The Washington Monument, etc.—D.C. is filled with small monuments and statues all across the district, let's celebrate as much of it as we can.</p> </div>
+  <div class="intro"><p><strong>A growing collection of some of the great statuary hidden around the Nation’s capital</strong>. Forget about the big stuff—The Lincoln Memorial, The Washington Monument, etc.—D.C. is filled with small monuments and statues all across the district, let's celebrate as much of it as we can.</p></div>
   <hr>
-  <div class="statues">
+  <ul class="filter-button-group">
+    <li><button data-filter=".military" class="without-style more-button tag-filter">Military</button></li>
+    <li><button data-filter=".political" class="without-style more-button tag-filter">Political</button></li>
+    <li><button data-filter=".grid-item" class="without-style more-button tag-filter">All</button></li>
+  </ul>
+  <div class="statues grid">
     {% for post in site.posts  %}
-    <a class="without-underline" href="{{ post.url }}"><div class="statue" style="background-image: url({{ post.listing }});">
+    <a class="without-underline" href="{{ post.url }}"><div class="statue grid-item {% for topic in post.topics %}{{ topic | slugify }} {% endfor %}" style="background-image: url({{ post.listing }});">
       <span class="statue-details">{{ post.title }}</span>
     </div></a>
     {% endfor %}

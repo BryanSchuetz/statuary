@@ -5,8 +5,7 @@
 <html>
 
   {% include head.html %}
-  <script type="text/javascript">
-  </script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/site.js"></script>
   <body>
     {% include svg_sprite.html %}
     {% include header.html %}
@@ -20,7 +19,31 @@
 
       {% include footer.html %}
     </div>
-    <script>
-    </script>
+    <script type="text/javascript">
+      $( window ).load(function() {
+        $('.grid').isotope({
+        // options
+        itemSelector: '.grid-item',
+        layoutMode: 'masonry'
+      });
+      // init Isotope
+      var $grid = $('.grid').isotope({
+        // options
+      });
+      // filter items on button click
+      $('.filter-button-group').on( 'click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+      });
+      // change is-checked class on buttons
+      $('.filter-button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $( this ).addClass('is-checked');
+        });
+      });
+})
+      </script>
   </body>
 </html>
