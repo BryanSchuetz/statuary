@@ -2,3 +2,4 @@
 .sass-cache
 build
 .jekyll-metadata
+node_modules/

@@ -4,7 +4,9 @@
   "description": "DC Statuary",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" "
+    "serve": "browser-sync start --config browser-sync.js",
+    "build":"bundle exec jekyll build --watch --incremental",
+    "jekyllfy": "npm run build & npm run serve"
   },
   "repository": {
     "type": "git",
@@ -19,11 +21,6 @@
   },
   "homepage": "https://github.com/BryanSchuetz/statuary#readme",
   "devDependencies": {
-    "surge": "^0.17.7",
-    "gulp": "",
-    "browser-sync": "",
-    "hygienist-middleware": "",
-    "gulp-shell": "",
-    "gulp-uglify": ""
+    "browser-sync": "^2.18.8"
   }
 }
