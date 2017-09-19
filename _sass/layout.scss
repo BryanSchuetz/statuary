@@ -314,3 +314,25 @@ div.mapboxgl-popup{
 .home-map{
   margin-top: 5rem;
 }
+.filter-button-group{
+  list-style: none;
+  display: block;
+  padding-left: 8px;
+  @include clearfix;
+  margin-bottom: 2rem;
+}
+.filter-button{
+  display: block;
+  float: left;
+  margin-right: 1rem;
+  margin-left: 0px;
+  button{
+    border-radius: 3px;
+    border: 1px solid darken($blue, 5%);
+    padding-right: 17px;
+    padding-left: 17px;
+    background-color: $blue;
+    color: white;
+    font-weight: blod;
+  }
+}
