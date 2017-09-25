@@ -329,10 +329,15 @@ div.mapboxgl-popup{
   button{
     border-radius: 3px;
     border: 1px solid darken($blue, 5%);
-    padding-right: 17px;
-    padding-left: 17px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     background-color: $blue;
     color: white;
     font-weight: blod;
   }
+}
+.filter-label{
+  margin-bottom: 10px;
 }
