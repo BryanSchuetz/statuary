@@ -63,7 +63,7 @@ header{
   @include responsive(wide-screens){
     height: 300px;
   }
-  background-image: url(/uploads/header-map.jpg);
+  background-image: url(https://api.mapbox.com/styles/v1/dai/cj6tglt4669i12rmzchzpe5f0/static/-77.046352,38.909864,14,0,47/1280x720@2x?access_token=pk.eyJ1IjoiZGFpIiwiYSI6IkZsZ0hqcDAifQ.xT3JeLA3cXqgN3HBwoxgAA);
   background-position: center;
   background-size: cover;
 }
