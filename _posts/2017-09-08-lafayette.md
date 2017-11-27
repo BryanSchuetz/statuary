@@ -4,8 +4,8 @@ date: 2017-09-08 08:33:57 -05:00
 topics:
 - Military
 layout: post
-listing: '/uploads/Lafayette-listing.jpg'
-wide: '/uploads/Lafayette-wide.jpg'
+listing: '/uploads/lafayette-listing.jpg'
+wide: '/uploads/lafayette-wide.jpg'
 lat: 38.899004
 long: -77.035363
 zoom: 15
