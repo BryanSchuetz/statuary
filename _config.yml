@@ -1,6 +1,6 @@
 ---
-title: Siteleaf/Jekyll
-url: http://siteleaf-jekyll.siteleaf.net
+title: DC Statuary
+url: https://dc-statuary.com
 timezone: America/New_York
 collections:
   posts:
@@ -25,7 +25,7 @@ exclude:
 - .gulpfile.js
 - .package.json
 description: |
-  Write an awesome description for your new site here.
+  A growing collection of some of the great statuary hidden around the Nation’s capital. Forget about the big stuff—The Lincoln Memorial, The Washington Monument, etc.—D.C. is filled with small monuments and statues all across the district, let's celebrate as much of it as we can.
 baseurl:
 permalink: /:title
 destination: "./build"
